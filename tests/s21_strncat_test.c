@@ -205,8 +205,6 @@ START_TEST(test_s21_strncat_9) {
 
   s21_strncat_result = s21_strncat(dest_s21, src, n);
   strncat_result = strncat(dest, src, n);
-  int result = strcmp(s21_strncat_result, strncat_result);
-  printf("%d", result);
   ck_assert_str_eq(s21_strncat_result, strncat_result);
 }
 END_TEST
