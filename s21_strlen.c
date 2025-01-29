@@ -3,7 +3,8 @@
 s21_size_t s21_strlen(const char *str) {
   s21_size_t result = 0;
 
-  for (; str[result]; result++);
-
+  while (str[result] != '\0') {
+        result++;
+    }
   return result;
 }
